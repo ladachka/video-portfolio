@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Downloads/Pics"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portofdli-web"
+	}
+}
