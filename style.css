@@ -110,12 +110,31 @@ body::after {
 .grid-item:hover .thumb-ph { background: #c2b9ac; }
 
 .thumb iframe,
-.thumb video {
+.thumb video,
+.thumb img {
   display: block;
   width: 100%;
   height: auto;
   border: none;
   object-fit: cover;
+}
+
+.hero-link {
+  margin-top: 18px;
+}
+
+.hero-link a {
+  color: var(--ember);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  font-weight: 700;
+  transition: border-color 0.15s;
+    font-size: clamp(0.3rem, 4vw, 4rem);
+}
+
+.hero-link a:hover {
+  border-color: var(--ember);
 }
 
 /* ── ITEM TITLE ── */
