@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="hero-eyebrow">Video Portfolio</p>
+    <h1 class="hero-name">Lada Tatarkina</h1>
+  </header>
+
+  <!-- GALLERY -->
+  <main class="gallery" id="work">
+
+    <div class="grid-item reveal">
+      <div class="thumb">
+        <div class="thumb-ph">
+<div class="thumb">
+  <video src="video01.mp4" controls playsinline></video>
+</div>        </div>
+      </div>
+      <p class="item-title">Project Title</p>
+    </div>
+
+    <div class="grid-item reveal">
+      <div class="thumb">
+  <video src="video02.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Short Film</p>
+    </div>
+
+    <div class="grid-item reveal">
+      <div class="thumb">
+  <video src="video03.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Music Video</p>
+    </div>
+
+            <div class="grid-item reveal">
+      <div class="thumb">
+ <video src="video09.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Brand Film</p>
+    </div>
+
+    <div class="grid-item reveal">
+      <div class="thumb">
+ <video src="video04.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Documentary</p>
+    </div>
+
+    <div class="grid-item reveal">
+      <div class="thumb">
+ <video src="video07.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Brand Film</p>
+    </div>
+
+        <div class="grid-item reveal">
+      <div class="thumb">
+ <video src="video_08.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Brand Film</p>
+    </div>
+
+
+        <div class="grid-item reveal">
+      <div class="thumb">
+  <video src="concert_recap.mp4" controls playsinline></video>
+      </div>
+      <p class="item-title">Commercial</p>
+    </div>
+
+  </main>
+
+  <!-- CONTACT -->
+  <footer class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="contact-label">Get in touch</p>
+      <h2 class="contact-big">Say Hello ↗</h2>
+      <div class="contact-links">
+        <a href="mailto:your@email.com">Email</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://vimeo.com/yourprofile" target="_blank">Vimeo</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Your Name</p>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
