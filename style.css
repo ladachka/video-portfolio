@@ -43,7 +43,7 @@ body::after {
 .hero { position: relative; }
 
 .hero-eyebrow {
-  font-size: clamp(0.9rem, 2vw, 8rem);
+  font-size: clamp(1.1rem, 3vw, 8rem);
   font-weight: 400;
   letter-spacing: 0.16em;
   color: var(--muted);
@@ -52,7 +52,7 @@ body::after {
 }
 
 .hero-name {
-  font-size: clamp(2rem, 6vw, 10rem);
+  font-size: clamp(3rem, 6.5vw, 10rem);
   font-weight: 300;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -138,7 +138,7 @@ body::after {
   padding-bottom: 4px;
   font-weight: 400;
   transition: border-color 0.15s, color 0.15s;
-  font-size: clamp(0.72rem, 1.8vw, 0.92rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
