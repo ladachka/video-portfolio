@@ -151,8 +151,8 @@
   </main>
 
   <!-- GALLERY: PHOTOS -->
-  <main class="gallery hidden" id="photosSection" aria-live="polite">
-    <div id="photosGrid" class="photos-grid"></div>
+  <!-- Move photos directly into the gallery so they share the same grid columns as videos -->
+  <main class="gallery hidden photos-grid" id="photosSection" aria-live="polite">
   </main>
 
   <!-- CONTACT -->
@@ -235,7 +235,8 @@
     }
 
     async function loadPhotos() {
-      const photosGrid = document.getElementById('photosGrid');
+      // append photo cards directly into the photosSection (which is both .gallery and .photos-grid)
+      const photosGrid = photosSection;
       if (!photosGrid) return;
 
       const files = await listRepoFiles();
